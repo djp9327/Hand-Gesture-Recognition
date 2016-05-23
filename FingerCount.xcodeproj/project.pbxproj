@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFD45B891A8822650029FB56 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD45B881A8822650029FB56 /* main.cpp */; };
+		BF3910AF1CF366F400509D1D /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3910AE1CF366F400509D1D /* stdafx.cpp */; };
+		BF3910B11CF3671C00509D1D /* Capture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3910B01CF3671C00509D1D /* Capture.cpp */; };
+		BFD45B971A8C23FC0029FB56 /* libopencv_core.2.4.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD45B961A8C23FC0029FB56 /* libopencv_core.2.4.10.dylib */; };
+		BFD45B991A8C241D0029FB56 /* libopencv_imgproc.2.4.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD45B981A8C241D0029FB56 /* libopencv_imgproc.2.4.10.dylib */; };
+		BFD45B9B1A8C24390029FB56 /* libopencv_highgui.2.4.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD45B9A1A8C24390029FB56 /* libopencv_highgui.2.4.10.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BFD45B851A8822650029FB56 /* CS440CV */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CS440CV; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFD45B881A8822650029FB56 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BF3910AE1CF366F400509D1D /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = stdafx.cpp; path = FingerCount/stdafx.cpp; sourceTree = "<group>"; };
+		BF3910B01CF3671C00509D1D /* Capture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Capture.cpp; path = ../FingerCount/Capture.cpp; sourceTree = "<group>"; };
+		BFD45B851A8822650029FB56 /* FingerCount */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FingerCount; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD45B8F1A8822880029FB56 /* Capture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Capture.cpp; sourceTree = "<group>"; };
+		BFD45B901A8822880029FB56 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		BFD45B911A8822880029FB56 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
+		BFD45B921A8822880029FB56 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		BFD45B931A8822880029FB56 /* targetver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = targetver.h; sourceTree = "<group>"; };
+		BFD45B961A8C23FC0029FB56 /* libopencv_core.2.4.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.10.dylib; path = ../../../../usr/local/Cellar/opencv/2.4.10.1/lib/libopencv_core.2.4.10.dylib; sourceTree = "<group>"; };
+		BFD45B981A8C241D0029FB56 /* libopencv_imgproc.2.4.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.10.dylib; path = ../../../../usr/local/Cellar/opencv/2.4.10.1/lib/libopencv_imgproc.2.4.10.dylib; sourceTree = "<group>"; };
+		BFD45B9A1A8C24390029FB56 /* libopencv_highgui.2.4.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.10.dylib; path = ../../../../usr/local/Cellar/opencv/2.4.10.1/lib/libopencv_highgui.2.4.10.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD45B9B1A8C24390029FB56 /* libopencv_highgui.2.4.10.dylib in Frameworks */,
+				BFD45B991A8C241D0029FB56 /* libopencv_imgproc.2.4.10.dylib in Frameworks */,
+				BFD45B971A8C23FC0029FB56 /* libopencv_core.2.4.10.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +57,11 @@
 		BFD45B7C1A8822650029FB56 = {
 			isa = PBXGroup;
 			children = (
-				BFD45B871A8822650029FB56 /* CS440CV */,
+				BF3910AE1CF366F400509D1D /* stdafx.cpp */,
+				BFD45B9A1A8C24390029FB56 /* libopencv_highgui.2.4.10.dylib */,
+				BFD45B981A8C241D0029FB56 /* libopencv_imgproc.2.4.10.dylib */,
+				BFD45B961A8C23FC0029FB56 /* libopencv_core.2.4.10.dylib */,
+				BFD45B871A8822650029FB56 /* FingerCount */,
 				BFD45B861A8822650029FB56 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +69,31 @@
 		BFD45B861A8822650029FB56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFD45B851A8822650029FB56 /* CS440CV */,
+				BFD45B851A8822650029FB56 /* FingerCount */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BFD45B871A8822650029FB56 /* CS440CV */ = {
+		BFD45B871A8822650029FB56 /* FingerCount */ = {
 			isa = PBXGroup;
 			children = (
-				BFD45B881A8822650029FB56 /* main.cpp */,
+				BFD45B8F1A8822880029FB56 /* Capture.cpp */,
+				BF3910B01CF3671C00509D1D /* Capture.cpp */,
+				BFD45B901A8822880029FB56 /* ReadMe.txt */,
+				BFD45B911A8822880029FB56 /* stdafx.cpp */,
+				BFD45B921A8822880029FB56 /* stdafx.h */,
+				BFD45B931A8822880029FB56 /* targetver.h */,
 			);
+			name = FingerCount;
 			path = CS440CV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BFD45B841A8822650029FB56 /* CS440CV */ = {
+		BFD45B841A8822650029FB56 /* FingerCount */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFD45B8C1A8822650029FB56 /* Build configuration list for PBXNativeTarget "CS440CV" */;
+			buildConfigurationList = BFD45B8C1A8822650029FB56 /* Build configuration list for PBXNativeTarget "FingerCount" */;
 			buildPhases = (
 				BFD45B811A8822650029FB56 /* Sources */,
 				BFD45B821A8822650029FB56 /* Frameworks */,
@@ -77,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = CS440CV;
+			name = FingerCount;
 			productName = CS440CV;
-			productReference = BFD45B851A8822650029FB56 /* CS440CV */;
+			productReference = BFD45B851A8822650029FB56 /* FingerCount */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BFD45B801A8822650029FB56 /* Build configuration list for PBXProject "CS440CV" */;
+			buildConfigurationList = BFD45B801A8822650029FB56 /* Build configuration list for PBXProject "FingerCount" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BFD45B841A8822650029FB56 /* CS440CV */,
+				BFD45B841A8822650029FB56 /* FingerCount */,
 			);
 		};
 /* End PBXProject section */
@@ -118,7 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFD45B891A8822650029FB56 /* main.cpp in Sources */,
+				BF3910B11CF3671C00509D1D /* Capture.cpp in Sources */,
+				BF3910AF1CF366F400509D1D /* stdafx.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,21 +229,49 @@
 		BFD45B8D1A8822650029FB56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				HEADER_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					/usr/local/include,
+					/usr/local/lib,
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/opencv/2.4.10.1/lib,
+					"$(inherited)",
+					/usr/local/lib,
+					/usr/local/include,
+				);
+				PRODUCT_NAME = FingerCount;
 			};
 			name = Debug;
 		};
 		BFD45B8E1A8822650029FB56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				HEADER_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					"\\usr\\local\\include",
+					"\\usr\\local\\lib",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/opencv/2.4.10.1/lib,
+					"$(inherited)",
+					/usr/local/lib,
+					/usr/local/include,
+				);
+				PRODUCT_NAME = FingerCount;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFD45B801A8822650029FB56 /* Build configuration list for PBXProject "CS440CV" */ = {
+		BFD45B801A8822650029FB56 /* Build configuration list for PBXProject "FingerCount" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFD45B8A1A8822650029FB56 /* Debug */,
@@ -225,13 +280,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFD45B8C1A8822650029FB56 /* Build configuration list for PBXNativeTarget "CS440CV" */ = {
+		BFD45B8C1A8822650029FB56 /* Build configuration list for PBXNativeTarget "FingerCount" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFD45B8D1A8822650029FB56 /* Debug */,
 				BFD45B8E1A8822650029FB56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
